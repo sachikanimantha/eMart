@@ -1,0 +1,39 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sachika.eMart.QRScanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/qr_scan"
+        android:id="@+id/ivScan"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="176dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:text="Using this scan QR code on the products using your camera"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivScan"
+        app:layout_constraintVertical_bias="0.06"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sachika.eMart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.MyTheme">
+        <activity android:name="sachika.eMart.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sachika.eMart.CategoryAvtivity"
+            android:parentActivityName="sachika.eMart.MainActivity" />
+        <activity android:name="sachika.eMart.ProductCategoryActivity" />
+        <activity
+            android:name="sachika.eMart.SubCategoryActivity"
+            android:parentActivityName="sachika.eMart.MainActivity" />
+        <activity
+            android:name="sachika.eMart.ProductActivity"
+            android:parentActivityName="sachika.eMart.MainActivity" />
+        <activity android:name="sachika.eMart.ProductDetails" />
+        <activity android:name="sachika.eMart.AppBar" />
+        <activity android:name="sachika.eMart.MyCartActivity" />
+        <activity
+            android:name="sachika.eMart.OrderConfirmation"
+            android:label="@string/title_activity_order_confirmation" />
+        <activity android:name="sachika.eMart.SignUpActivity" />
+        <activity android:name="sachika.eMart.SignInActivity" />
+        <activity
+            android:name="sachika.eMart.MyAccountActivity"
+            android:parentActivityName="sachika.eMart.MainActivity" />
+        <activity android:name="sachika.eMart.MyOrdersActivity" />
+        <activity
+            android:name="sachika.eMart.MyProfileActivity"
+            android:parentActivityName="sachika.eMart.MyAccountActivity" />
+        <activity android:name="sachika.eMart.ShippingAddressActivity" />
+        <activity android:name="sachika.eMart.WelcomeActivity" />
+        <activity android:name="sachika.eMart.NewProducts" />
+        <activity android:name="sachika.eMart.OrderProductsActivity"></activity>
+    </application>
+
+</manifest>
